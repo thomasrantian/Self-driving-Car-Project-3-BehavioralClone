@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.4.13)  5 NOV 2017 21:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.4.13)  13 NOV 2017 01:28
 entering extended mode
 **Report.tex
 (Report.tex
@@ -691,19 +691,19 @@ LaTeX Info: Redefining \nameref on input line 20.
 <center.JPG, id=33, 321.2pt x 160.6pt>
 File: center.JPG Graphic file (type jpg)
  <use center.JPG>
-Package pdftex.def Info: center.JPG used on input line 54.
+Package pdftex.def Info: center.JPG used on input line 52.
 (pdftex.def)             Requested size: 193.36191pt x 96.6842pt.
 
 <left.JPG, id=34, 321.2pt x 160.6pt>
 File: left.JPG Graphic file (type jpg)
  <use left.JPG>
-Package pdftex.def Info: left.JPG used on input line 60.
+Package pdftex.def Info: left.JPG used on input line 58.
 (pdftex.def)             Requested size: 193.36191pt x 96.6842pt.
 
 <right.JPG, id=35, 321.2pt x 160.6pt>
 File: right.JPG Graphic file (type jpg)
  <use right.JPG>
-Package pdftex.def Info: right.JPG used on input line 66.
+Package pdftex.def Info: right.JPG used on input line 64.
 (pdftex.def)             Requested size: 193.36191pt x 96.6842pt.
  [1
 
@@ -713,13 +713,13 @@ ate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.70 
-      <./center.JPG>] <cnn_model.png, id=52, 377.15906pt x 254.45062pt>
+l.68 
+      <./center.JPG>] <cnn_model.png, id=52, 647.04234pt x 534.49687pt>
 File: cnn_model.png Graphic file (type png)
 
 <use cnn_model.png>
-Package pdftex.def Info: cnn_model.png used on input line 77.
-(pdftex.def)             Requested size: 410.90327pt x 277.21754pt.
+Package pdftex.def Info: cnn_model.png used on input line 76.
+(pdftex.def)             Requested size: 290.05023pt x 239.59976pt.
  [2pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
  has been already used, duplicate ignored
 
@@ -742,36 +742,36 @@ l.83
 <demo.PNG, id=62, 491.21016pt x 187.07391pt>
 File: demo.PNG Graphic file (type png)
  <use demo.PNG>
-Package pdftex.def Info: demo.PNG used on input line 93.
+Package pdftex.def Info: demo.PNG used on input line 90.
 (pdftex.def)             Requested size: 435.06798pt x 165.69884pt.
  [3pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.101 \end{document}
-                     <./demo.PNG>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
+l.98 \end{document}
+                    <./demo.PNG>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
  (Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
 Package rerunfilecheck Info: File `Report.out' has not changed.
 (rerunfilecheck)             Checksum: A684F62A47B7EF7B82FBA04A08C768D0;388.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 98.
  ) 
 Here is how much of TeX's memory you used:
  17239 strings out of 493698
  316150 string characters out of 3144392
- 388958 words of memory out of 3000000
+ 388957 words of memory out of 3000000
  20269 multiletter control sequences out of 15000+200000
  9375 words of font info for 34 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 55i,11n,54p,763b,335s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,11n,54p,763b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTe
@@ -779,7 +779,7 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb>
-Output written on Report.pdf (3 pages, 915305 bytes).
+Output written on Report.pdf (3 pages, 948910 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  16 named destinations out of 1000 (max. 500000)

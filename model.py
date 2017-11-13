@@ -45,35 +45,61 @@ def trainningdata_gen(samples, batch_size = 32):
                 # firstly store the center image
                 source_path_center = line[0]
                 filename_center = source_path_center.split('/')[-1]
-                current_path_center = ('data/IMG/')+filename_center
+                current_path_center = ('IMG/')+filename_center
                 image_center = cv2.imread(current_path_center)
+                image_center = cv2.cvtColor(image_center, cv2.COLOR_BGR2RGB)
                 images.append(image_center)
                 measurement = float(line[3])
                 measurements.append(measurement)
                 images.append(cv2.flip(image_center,1))
-                measurements.append(measurement*-1.0)
-                
+                measurements.append(measurement*(-1.0))
+                                    
+                # Add random britness
+                image_center_t = cv2.cvtColor(image_center, cv2.COLOR_RGB2HSV)
+                image_center_t[:,:,2] = image_center_t[:,:,2]*random.uniform(0.3,1.0)
+                image_center_t = cv2.cvtColor(image_center_t, cv2.COLOR_HSV2RGB)
+                images.append(image_center_t)
+                measurements.append(measurement)
+                                    
+                """
             
                 # Then store the left image
                 source_path_left = line[1]
                 filename_left = source_path_left.split('/')[-1]
                 current_path_left = ('data/IMG/')+filename_left
                 image_left = cv2.imread(current_path_left)
+                image_left = cv2.cvtColor(image_left, cv2.COLOR_BGR2RGB)
                 images.append(image_left)
                 measurements.append(measurement+0.2)
                 images.append(cv2.flip(image_left,1))
                 measurements.append((measurement+0.2)*-1.0)
                 
+                image_left_t = cv2.cvtColor(image_left, cv2.COLOR_RGB2HSV)
+                image_left_t[:,:,2] = image_left_t[:,:,2]*random.uniform(0.3,1.0)
+                image_left_t = cv2.cvtColor(image_left_t, cv2.COLOR_HSV2RGB)
+                images.append(image_left_t)
+                measurements.append(measurement)
+                
+                
+            
                 # Then store the right image
                 source_path_right = line[2]
                 filename_right = source_path_right.split('/')[-1]
                 current_path_right = ('data/IMG/')+filename_right
                 image_right = cv2.imread(current_path_right)
+                image_right = cv2.cvtColor(image_right, cv2.COLOR_BGR2RGB)                    
                 images.append(image_right)
-                measurements.append(measurement-0.4)
+                measurements.append(measurement-0.2)
                 images.append(cv2.flip(image_right,1))
-                measurements.append((measurement-0.4)*-1.0)
-               
+                measurements.append((measurement-0.2)*-1.0)
+                
+                
+                image_right_t = cv2.cvtColor(image_right, cv2.COLOR_RGB2HSV)
+                image_right_t[:,:,2] = image_right_t[:,:,2]*random.uniform(0.3,1.0)
+                image_right_t = cv2.cvtColor(image_right_t, cv2.COLOR_HSV2RGB)
+                images.append(image_right_t)
+                measurements.append(measurement)
+               """
             
                 
             X_train = np.array(images)
@@ -110,8 +136,10 @@ model.add(Convolution2D(128,3,3,activation = "relu"))
 model.add(Flatten())
 
 model.add(Dense(400))
+model.add(Dropout(0.5))
 
 model.add(Dense(200))
+model.add(Dropout(0.5))
 
 model.add(Dense(100))
 
@@ -135,6 +163,6 @@ model.compile(loss='mse', optimizer='adam',metrics=['accuracy'])
 model.fit_generator(train_generator, samples_per_epoch=
             len(train_samples)*4, validation_data=validation_generator,
             nb_val_samples=len(validation_samples)*4, nb_epoch=4)
-model.save('olddatamodel_left.h5')
+model.save('model_center.h5')
 print('Work is finished')
 exit()
